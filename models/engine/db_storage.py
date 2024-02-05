@@ -89,7 +89,7 @@ class DBStorage:
     def get(self, cls, id):
         """Gets a specific instance from a specific class"""
         if cls and id:
-            key = cls.__name__ + '.' + id
+            key = cls.__name__ + "." + id
             for item in self.all(cls):
                 if item == key:
                     return self.all(cls)[item]
